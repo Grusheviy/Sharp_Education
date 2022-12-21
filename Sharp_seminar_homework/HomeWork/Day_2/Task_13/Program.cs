@@ -14,7 +14,7 @@ Console.WriteLine("the third of your number: " + numb[2]);
 }
 else
 {
-    Console.Write("Your write wrong number");
+    Console.Write("Your write not number or wrong number");
 }
 
 
