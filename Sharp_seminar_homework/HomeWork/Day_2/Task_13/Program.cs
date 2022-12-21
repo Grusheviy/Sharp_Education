@@ -10,7 +10,7 @@ string numb = (Console.ReadLine());
 if(numb.Length == 3)
 {
     int Number = Convert.ToInt32(numb);
-    Console.WriteLine("your random number" + Number);
+    Console.WriteLine("Your number" + Number);
     int digit = Number % 10; // Остаток от деления, последняя цифра
 
 Console.WriteLine("the third of your random number: " + digit);
