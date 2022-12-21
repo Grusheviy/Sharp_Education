@@ -4,18 +4,17 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.Write("Write your three-digit number: ");
+Console.Write("Write your number: ");
 string numb = (Console.ReadLine());
 
-if(numb.Length == 3)
+if(numb.Length > 2)
 {
-    int Number = Convert.ToInt32(numb);
-    Console.WriteLine("Your number" + Number);
-    int digit = Number % 10; // Остаток от деления, последняя цифра
-
-Console.WriteLine("the third of your random number: " + digit);
+Console.WriteLine("Your number" + numb);
+Console.WriteLine("the third of your number: " + numb[2]);
 }
 else
 {
-    Console.Write("Your write not three-digit number: ");
+    Console.Write("Your write wrong number");
 }
+
+

@@ -16,7 +16,7 @@
 // Пробовал через функции TrmiStart и TrimEnd но ничего не вышло.
 int Number = new Random().Next(101, 1000);
 Console.WriteLine("your random number: " + Number);
-string inttosttr = Number.ToString(); // Приводим рандомное значение ing к строковому значению string
+string inttosttr = Number.ToString(); // Приводим рандомное значение int к строковому значению string
 string numn1 = inttosttr.Remove(0,1); // Удаляем из строкового значения один элемент под индексом 0
 string numb3 = numn1.Remove(1,1); // Удаляем из строкового значения один элемент под индексом 1
 Console.WriteLine("your second number of you random number: " + numb3);
