@@ -52,22 +52,23 @@
 //     Console.WriteLine();
 // }
 
-string text = "Я думаю, - сказал князь, улыбаясь,  - что,"
+string text = "Я думаю, - сказал князь, улыбаясь, - что,"
             + "если бы вас послали вместо нашего милорда";
 
-string Replase(string text, char oldValue, char newValue)
+string replase(string text, char oldValue, char NewValue)
 {
-string result = String.Empty;
+string result = string.Empty;   
 int length = text.Length;
-
-    for (int i = 0; i < length; i++)
-    {
-    if(text[i] = oldValue, result + $"{NewValue}");
-    else result + $"{str[i]}";
-    }
+for (int i = 0; i < length; i++)
+{
+    if(text[i] == oldValue) result = result + $"{NewValue}";
+    else result = result + $"{text[i]}";
+}
 return result;
 }
-string newText = replace(text,' ', '|');
+string newText = replase(text, ' ','|');
+
 Console.WriteLine(newText);
-string newText = replace(text,'к', 'ф');
+Console.WriteLine();
+newText = replase(newText, ',','@');
 Console.WriteLine(newText);
