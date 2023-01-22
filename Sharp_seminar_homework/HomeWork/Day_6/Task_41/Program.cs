@@ -23,7 +23,7 @@ int count = 0;
         count++;
     }
     }
-Console.WriteLine($"Кол-во элементов > 0: {count}");
+Console.WriteLine($"Number of elements > 0: {count}");
 }
 
 Console.Write("Write your array length: ");
